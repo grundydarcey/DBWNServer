@@ -16,6 +16,7 @@ nightlifeRouter
   });
 
 
+
 nightlifeRouter
   .route('/:area')
   .get((req, res, next) => {
@@ -32,7 +33,6 @@ nightlifeRouter
       .catch(next);
   });
 
-
 nightlifeRouter
   .route('/:adult')
   .get((req, res, next) => {
@@ -48,4 +48,5 @@ nightlifeRouter
       })
       .catch(next);
   });
+
 module.exports = nightlifeRouter;
