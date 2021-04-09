@@ -8,6 +8,7 @@ const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
 const nightlifeRouter = require('./Nightlife/nightliferouter');
 const restaurantRouter = require('./Restaurants/restaurantrouter');
+const adultRouter = require('./Adult/adultrouter');
 const { errorHandler } = require('./error-handler');
 const app = express();
 
@@ -25,6 +26,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/restaurants', restaurantRouter);
 app.use('/api/nightlife', nightlifeRouter);
+app.use('/api/adult', adultRouter);
 app.use(errorHandler);
 
 module.exports = app;

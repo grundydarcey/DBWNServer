@@ -15,8 +15,6 @@ nightlifeRouter
       .catch(next);
   });
 
-
-
 nightlifeRouter
   .route('/:area')
   .get((req, res, next) => {
@@ -29,22 +27,6 @@ nightlifeRouter
           });
         }
         res.json(clubs);
-      })
-      .catch(next);
-  });
-
-nightlifeRouter
-  .route('/adult')
-  .get((req, res, next) => {
-    const knexInstance = req.app.get('db');
-    NightlifeService.getByAdult(knexInstance, req.params.adult)
-      .then(club => {
-        if (!club) {
-          return res.status(404).json({
-            error: { message: `No adult clubs found.`}
-          });
-        } 
-        res.json(club);
       })
       .catch(next);
   });

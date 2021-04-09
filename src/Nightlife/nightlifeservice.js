@@ -2,27 +2,15 @@ const NightlifeService = {
   getAllNightlife(knex) {
     return knex
       .select('*')
-      .from('nightlife');
+      .from('nightlife')
+      .where({ 'adult': false });
   },
   
   getByArea(knex, area) {
-    /*return knex
-      .from('nightlife')
-      .select('*')  
-      .where('area', area);*/
-
     return knex
       .from('nightlife')
       .select('*')
       .where({'area': area, 'adult': false});
-  },
-
-  
-  getByAdult(knex) {
-    return knex
-      .from('nightlife')
-      .select('*')
-      .where('adult', true);
   }
 };
   
