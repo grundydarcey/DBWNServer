@@ -34,7 +34,7 @@ nightlifeRouter
   });
 
 nightlifeRouter
-  .route('/:adult')
+  .route('/adult')
   .get((req, res, next) => {
     const knexInstance = req.app.get('db');
     NightlifeService.getByAdult(knexInstance, req.params.adult)
