@@ -6,13 +6,17 @@ const NightlifeService = {
   },
   
   getByArea(knex, area) {
-    return knex
+    /*return knex
       .from('nightlife')
       .select('*')  
-      .where('area', area)
+      .where('area', area);*/
 
-//      .except.select('*').from('nightlife').where('adult', false);
+    return knex
+      .from('nightlife')
+      .select('*')
+      .where({'area': area, 'adult': false});
   },
+
   
   getByAdult(knex) {
     return knex
