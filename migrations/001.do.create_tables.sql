@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS restaurants (
     city text NOT NULL,
     rest_state text NOT NULL,
     phone_number text NOT NULL,
+    phone_link text NOT NULL,
     rest_image text,
     link text NOT NULL
 );
