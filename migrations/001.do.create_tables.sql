@@ -10,7 +10,9 @@ CREATE TABLE IF NOT EXISTS restaurants (
     phone_number text NOT NULL,
     phone_link text NOT NULL,
     rest_image text,
-    link text NOT NULL
+    link text NOT NULL,
+    lat integer NOT NULL,
+    lng integer NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS nightlife (
@@ -25,5 +27,7 @@ CREATE TABLE IF NOT EXISTS nightlife (
     entry_age integer NOT NULL,
     adult boolean NOT NULL,
     area text NOT NULL,
-    club_image text
+    club_image text,
+    lat integer NOT NULL,
+    lng integer NOT NULL
 );
