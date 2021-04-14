@@ -37,6 +37,7 @@ VALUES
   ('Boothill Saloon', 310, 'East Main Street', 32118, 'Daytona Beach', 'Florida', null, 21, false, 'Main', 'https://boothillsaloon.com/wp-content/uploads/2014/02/cemetery.jpg'),
   ('Dirty Harry''s', 705, 'Main Street', 32114, 'Daytona Beach', 'Florida', null, 21, false, 'Main', 'https://daytonabeachmainstreet.com/wp-content/uploads/2017/07/logo-dirtyharrys-web.png'),
   ('Full Moon Saloon', 700, 'Main Street', 32118, 'Daytona Beach', 'Florida', null, 21, false, 'Main', 'https://daytonabeachmainstreet.com/wp-content/uploads/2017/07/logo-fullmoon-red-1.png'),
-  ('Kona Tiki', 49, 'West Granada Boulevard', 32174, 'Ormond Beach', 'Florida', null, 21, false, 'Ormond', 'https://marcmytravels.com/wp-content/uploads/2017/01/Kona-Tiki-Bar-Daytona-Beach.jpg');
+  ('Kona Tiki', 49, 'West Granada Boulevard', 32174, 'Ormond Beach', 'Florida', null, 21, false, 'Ormond', 'https://marcmytravels.com/wp-content/uploads/2017/01/Kona-Tiki-Bar-Daytona-Beach.jpg'),
+  ('The Fantasy Shoppe', 709, 'Ridgewood Avenue', 32114, 'Daytona Beach', 'Florida', null, 21, true, 'Main', 'https://scontent-mia3-2.xx.fbcdn.net/v/t1.6435-9/67299365_2909416729121138_3401277974291415040_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=973b4a&_nc_ohc=49RL8RxaeE8AX_NW1j9&_nc_ht=scontent-mia3-2.xx&oh=5304aff904583c24717f37074ec6bc72&oe=609C4783');
 
 COMMIT;
