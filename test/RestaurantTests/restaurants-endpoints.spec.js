@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 const { expect } = require('chai');
 const knex = require('knex');
-const app = require('../src/app');
+const app = require('../../src/app');
 const { makeRestaurantArray } = require('./restaurants-fixtures');
-const RestaurantService = require('../src/Restaurants/restaurantservice');
+const RestaurantService = require('../../src/Restaurants/restaurantservice');
 
 describe('Restaurant endpoints', function() {
+  this.timeout(10000);
   let db;
   let testRestaurants = makeRestaurantArray();
   before(() => {
