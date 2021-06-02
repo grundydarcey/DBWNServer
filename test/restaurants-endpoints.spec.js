@@ -2,7 +2,7 @@
 const { expect } = require('chai');
 const knex = require('knex');
 const app = require('../src/app');
-const { makeRestaurantArray } = require('./RestaurantTests/restaurants-fixtures');
+const { makeRestaurantArray } = require('./fixtures/restaurants-fixtures');
 const RestaurantService = require('../src/Restaurants/restaurantservice');
 
 describe('Restaurant endpoints', function() {
